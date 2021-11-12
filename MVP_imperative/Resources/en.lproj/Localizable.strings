@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  MVP_imperative
+
+  Created by amirhosseinpy on 18/11/2021.
+  
+*/
+
+"dismiss" = "Dismiss";
+
+// MARK: - Profile
+"profile.title" = "Profile";
+"profile.followers" = "%@ followers";
+"profile.following" = "%@ following";
+"profile.pinned" = "Pinned";
+"profile.top" = "Top Repositories";
+"profile.starred" = "Starred Repositories";
+"profile.view.all" = "View all";

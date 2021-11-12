@@ -7,7 +7,7 @@
 
 import XCTest
 
-class MVP_imperativeUITestsLaunchTests: XCTestCase {
+class MVPimperativeUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

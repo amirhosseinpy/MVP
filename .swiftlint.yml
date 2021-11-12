@@ -1,0 +1,35 @@
+ # By default, SwiftLint uses a set of sensible default rules you can adjust:
+disabled_rules: # rule identifiers turned on by default to exclude from running
+  - trailing_whitespace
+  - switch_case_alignment
+  
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  
+identifier_name:
+  min_length:
+    error: 3
+  max_length:
+    warning: 60
+  excluded:
+    - id
+  allowed_symbols:
+    - _
+    
+line_length:
+  warning: 140
+  ignores_comments: true
+  
+vertical_whitespace:
+  max_empty_lines: 5
+  
+type_name:
+    min_length: 2
+    max_length: 50
+  
+colon:
+  apply_to_dictionaries: false
+
+function_body_length:
+    warning: 80
+    error: 150
