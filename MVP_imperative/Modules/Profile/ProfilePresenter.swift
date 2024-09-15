@@ -31,11 +31,14 @@ class ProfilePresenter: Presentable {
       switch response {
         case .success(let model):
           guard let self = self else { return }
-          let presentationModel = self.convertToPresentationModel(serverModel: model)
-          self.delegate?.presentProfile(profileModel: presentationModel)
+          DispatchQueue.main.async {
+              let presentationModel = self.convertToPresentationModel(serverModel: model)
+              self.delegate?.presentProfile(profileModel: presentationModel)
+          }
         case .failure(let error):
-          self?.delegate?.showFailureAlert(title: "Feching Profile Failed!",
-                                           message: error.localizedDescription)
+          DispatchQueue.main.async {
+              self?.delegate?.showFailureAlert(title: "Feching Profile Failed!", message: error.localizedDescription)
+          }
       }
     }
   }
